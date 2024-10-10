@@ -1,0 +1,115 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Yaldevi", sans-serif;
+
+}
+
+h1{
+    color: black;
+    font-family: "Yaldevi", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 42.11px;
+    align-self: center;
+}
+nav{
+    background-color: #fd8f00;
+}
+.nav_items{
+        align-self: center;
+font-size: 16px;
+font-weight: 500;
+line-height: 21.06px;
+color: black;
+cursor: pointer;
+}
+
+form input , div input {
+border-radius: 6px;
+    padding: 15px 12px;
+font-size: 32px;
+font-weight: 700;
+line-height: 42.11px;
+color: black;
+border: 3px solid transparent;
+background-color: rgb(217, 217, 217);
+}
+
+
+input::placeholder {
+    color: gray ;
+font-size: 32px;
+font-weight: 700;
+line-height: 42.11px;
+}
+
+form input[type="submit"]{
+    background-color: gray;
+}
+
+.dark-layer{
+    position: absolute;
+    left:0 ;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.25);
+    transform : translate(0% , 100%);
+    transition: all 1s;
+}
+
+.cards:hover .dark-layer{
+    transform : translate(0% , 0%);
+
+}
+
+.cursor-pointer{
+    cursor: pointer;
+}
+
+.loader {
+  width: 50px;
+  aspect-ratio: 1.154;
+  display: grid;
+  color: #000;
+  background:
+    linear-gradient(to bottom left ,#0000 calc(50% - 1px),currentColor 0 calc(50% + 1px),#0000 0) right/50% 100%,
+    linear-gradient(to bottom right,#0000 calc(50% - 1px),currentColor 0 calc(50% + 1px),#0000 0) left /50% 100%,
+    linear-gradient(currentColor 0 0) bottom/100% 2px;
+  background-repeat: no-repeat;
+  transform-origin: 50% 66%;
+  animation: l5 4s infinite linear;
+}
+.loader::before,
+.loader::after {
+  content: "";
+  grid-area: 1/1;
+  background: inherit;
+  transform-origin: inherit;
+  animation: inherit;
+}
+.loader::after {
+  animation-duration: 2s;
+}
+@keyframes l5{
+  100% {transform:rotate(1turn)}
+}
+
+.badge{
+  background-color: transparent !important;
+  border: 2px solid #fd8f00 !important;
+  color: #fd8f00;
+}
+.main-color{
+    color: #fd8f00;
+}
+
+.mealDetails{
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  background-color: rgba(255, 255, 255, 0.85);
+}
