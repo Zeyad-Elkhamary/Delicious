@@ -416,7 +416,7 @@ function search() {
   document.getElementById("main-section").innerHTML = `
   
   <div class="row justify-content-between">
-<div class="col-md-6 mb-sm-2 mb-xl-0">
+<div class="col-md-6 mb-4 mb-xl-0">
         <input onchange="getResName(event)" class="w-100" placeholder="Search by name"  type="text" id="searchName" >
 </div>
 
