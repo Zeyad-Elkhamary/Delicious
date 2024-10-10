@@ -416,7 +416,7 @@ function search() {
   document.getElementById("main-section").innerHTML = `
   
   <div class="row justify-content-between">
-<div class="col-md-6">
+<div class="col-md-6 mb-4 mb-xl-0">
         <input onchange="getResName(event)" class="w-100" placeholder="Search by name"  type="text" id="searchName" >
 </div>
 
@@ -472,8 +472,9 @@ function  displayMealsSearch(meals){
 }
 
 function displayRes(meals) {
-  meals ? displayMealsSearch(meals)
-    : document.getElementById("mealDetails").innerHTML = `<label class="alert alert-danger fs-1 text-center mt-5">There is not found or input is not valid</label>`;
+  meals
+    ? displayMealsSearch(meals)
+    : document.getElementById("ResultSearch").innerHTML = `<label class="alert alert-danger fs-1 text-center mt-5">There is not found or input is not valid</label>`;
 loader.classList.add("d-none");
   }
 
