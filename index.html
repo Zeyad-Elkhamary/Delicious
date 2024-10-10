@@ -18,17 +18,25 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <nav class="p-2">
+    <nav class="p-2 navbar navbar-expand-lg">
       <div class="d-flex justify-content-around align-items-center container">
-        <h1 class="cursor-pointer" onclick="start()">Delicious</h1>
+        <h1 class="navbar-brand fs-1 cursor-pointer " onclick="start()">Delicious</h1>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-        <ul class="d-flex list-unstyled align-self-center m-0">
-          <li onclick="contact()" class="mx-3 nav_items">Contact Us</li>
-          <li onclick="getingredints()" class="mx-3 nav_items">Ingredints</li>
-          <li onclick="getAreas()" class="mx-3 nav_items">Area</li>
-          <li onclick="getCategories()" class="mx-3 nav_items">Category</li>
-          <li onclick="search()" class="mx-3 nav_items">Search</li>
+        <ul class="navbar-nav ms-auto d-flex list-unstyled align-self-center">
+          <li onclick="contact()" class="mx-3 my-sm-1 my-xl-0 nav_items">Contact Us</li>
+          <li onclick="getingredints()" class="mx-3 my-sm-1 my-xl-0 nav_items">Ingredints</li>
+          <li onclick="getAreas()" class="mx-3 my-sm-1 my-xl-0 nav_items">Area</li>
+          <li onclick="getCategories()" class="mx-3 my-sm-1 my-xl-0 nav_items">Category</li>
+          <li onclick="search()" class="mx-3 my-sm-1 my-xl-0 nav_items">Search</li>
         </ul>
+      
+    </div>
+
+
       </div>
     </nav>
 
